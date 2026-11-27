@@ -1,0 +1,128 @@
+[
+  {
+    "id": "product",
+    "name": "产品广告 / 电商",
+    "focus": "产品轮廓、材质、标识",
+    "route": "图生视频 → 选镜头 → 精修 → 后期叠加真实标识",
+    "limitation": "文字、Logo 和精密结构容易变形；产品图作为第一帧，正式文案在后期排版。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Live-action product photography. A plain white ceramic cup sits on a warm oak table. Over five seconds the camera slowly pushes toward the rim as a thin wisp of steam rises. The cup stays still and the background remains softly lit.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "drama",
+    "name": "真人短剧 / 微电影",
+    "focus": "角色、服装、视线、动作接续",
+    "route": "角色卡 → 首帧 / Ref2VA → 分镜生成 → 对话剪辑",
+    "limitation": "独立文生镜头不能保证人物身份一致；人物片须提供参考图，并逐镜验收脸型和口型。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Live-action medium shot of a young adult woman in a blue coat beside a railway window. She looks at a folded letter, pauses, then raises her eyes toward the passing landscape. A static camera holds the composition for five seconds.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "anime",
+    "name": "二维动漫 / 漫剧",
+    "focus": "线条、色块、角色设定",
+    "route": "角色设定图 → 图生视频 → 镜头拼接 → 配音字幕",
+    "limitation": "运动过大可能破坏线条；用简单动作和固定角色参考，字幕单独合成。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] 2D-animated watercolor style. A small orange cat sits on a blue windowsill. During five seconds it follows a drifting leaf with its eyes and gently turns its head. The camera remains static; outlines and flat colors stay consistent.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "animation3d",
+    "name": "三维动画 / 黏土定格",
+    "focus": "材质和形体、风格连续",
+    "route": "统一材质参考 → 图生视频 → 精修少量镜头",
+    "limitation": "精修可能把黏土或卡通皮肤变得过写实；必须对照原风格决定是否保留。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Claymation close shot of a tiny round robot made of matte blue clay on a cardboard desk. It slowly waves one arm and settles back into its initial pose over five seconds. The camera remains static and soft studio light reveals fingerprints in the clay.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "documentary",
+    "name": "纪录 / 自然 / 人文",
+    "focus": "真实来源、空间和动作可信",
+    "route": "实拍素材优先 → 生成补充镜头 → 旁白 → 剪辑",
+    "limitation": "生成镜头是创作素材，不能作为真实事件记录；保留素材来源并在需要时标注。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Naturalistic telephoto shot of tall reeds beside a quiet lake at dawn. A light breeze moves the reed tops while a small bird briefly turns its head on a branch. The camera stays still for five seconds.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "education",
+    "name": "知识科普 / 教程",
+    "focus": "概念准确、文字和步骤清晰",
+    "route": "讲稿 → 屏幕录制 / 图表 → 补充镜头 → 字幕",
+    "limitation": "公式、图表和软件界面用真实素材或后期绘制；生成模型不负责事实校验。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Live-action macro view of a transparent glass filled halfway with clean water. One drop of blue food coloring enters and slowly disperses into visible swirls during five seconds. The camera is fixed against a neutral white background.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "food",
+    "name": "美食 / 手作 / 生活方式",
+    "focus": "材料、过程和手部动作",
+    "route": "步骤拆镜 → 图生短动作 → 特写剪辑",
+    "limitation": "手部、工具接触和液体易出错；一个镜头只安排一个明确动作。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Live-action close shot of fresh bread on a wooden cutting board. A small cloud of steam drifts from the cut surface while the camera slowly trucks right for five seconds. Warm side lighting reveals the crust texture.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "travel",
+    "name": "旅行 / 城市 / 风景",
+    "focus": "地理可信、镜头稳定",
+    "route": "实拍 / 场景参考 → 缓慢运镜 → 节奏剪辑",
+    "limitation": "生成地标可能失真；需准确展示地点时使用实拍，不用生成图替代事实。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Wide live-action view of a quiet fictional coastal village at sunrise. Soft waves meet the shore as the camera slowly pans right with small amplitude over five seconds. Buildings remain stable and the horizon stays level.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "music",
+    "name": "音乐 MV / 舞蹈",
+    "focus": "节拍、动作和镜头切点",
+    "route": "先定音乐 → 节拍表 → 短镜头 → 对拍剪辑",
+    "limitation": "动作快时4步容易拖影；用6–8步检查动作，口型和节拍要按实际音轨验证。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Stylized live-action close shot of a silver ribbon suspended against a dark stage. The ribbon slowly undulates under blue and amber spotlights during five seconds. The camera tracks its center smoothly.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ugc",
+    "name": "竖屏口播 / 社媒短视频",
+    "focus": "人物稳定、信息密度、字幕安全区",
+    "route": "真人录音 / 实拍 → 辅助镜头 → 竖屏适配 → 字幕",
+    "limitation": "生成语音不保证每字准确；正式口播以录音为准，字幕来自确认过的逐字稿。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Vertical live-action medium close shot of an adult presenter in a neutral sweater at a tidy desk. The presenter smiles, points once toward a plain notebook, and returns their hand to the desk over five seconds. The camera remains at eye level.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "architecture",
+    "name": "建筑 / 室内 / 房产",
+    "focus": "结构、透视、布局和尺度",
+    "route": "真实场景图 → 小幅运镜 → 字幕标注",
+    "limitation": "大幅绕拍可能改动结构；交付前对照真实平面和照片，不把生成结构当作设计事实。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Live-action wide interior shot of a simple bright living room with a sofa and a tall window. The camera slowly pushes forward a short distance for five seconds. Wall positions, furniture shapes and straight architectural lines remain fixed.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "game",
+    "name": "游戏概念 / 奇幻 / 科幻",
+    "focus": "世界设定、视觉语言、角色轮廓",
+    "route": "设定图 → 分镜 → 参考生成 → 声音设计",
+    "limitation": "复杂战斗和多主体接触难稳定；拆成准备、动作、反应三个镜头。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] 3D CG wide shot of a small exploration rover on a rocky fictional moon. A blue indicator pulses while the rover slowly rolls forward over five seconds. The camera tracks beside it and distant stars remain still.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "fashion",
+    "name": "时尚 / 人像 / 美妆",
+    "focus": "脸型、服装、肤质和饰品",
+    "route": "已确认人物参考 → 小幅动作 → 细节检查 → 调色",
+    "limitation": "高强度精修可能换脸或改衣服；优先保持身份，再判断纹理提升是否值得。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Live-action portrait of an adult model in a simple dark green jacket against a gray studio background. Over five seconds the model slowly turns their head toward the soft key light and holds the final pose. The camera stays still.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "abstract",
+    "name": "抽象视觉 / 氛围 / 循环背景",
+    "focus": "节奏、色彩、首尾衔接",
+    "route": "首尾帧 → 简单运动 → 接缝检查 → 循环导出",
+    "limitation": "相似首尾帧不等于无缝循环；还需检查运动速度、亮度和音频边界。",
+    "status": "模板已整理；此题材尚未逐一生成验收",
+    "sample_prompt": "integrated_multimodal_description: [Shot 1] Abstract 3D animation of translucent amber glass rings suspended in a deep navy space. During five seconds the rings rotate slowly around a common center, returning toward their initial arrangement. A fixed camera and stable soft lighting reveal their edges.\n\noverall_soundscape: Subtle location ambience and sounds caused by the visible action.\n\nnon_diegetic_music: N/A"
+  }
+]
